@@ -5,9 +5,6 @@ phases:
     runtime-versions:
       python: 3.11
     commands:
-      - python -m venv venv      
-      - chmod +x venv/bin/activate   
-      - venv/bin/activate
       - pip install boto3  # Install AWS SDK for Python
       - pip install --upgrade pip
       
