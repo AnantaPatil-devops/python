@@ -13,6 +13,7 @@ phases:
 
   build:
     commands:
+      - cd aws
       - python instance.py
 
 # Use the build image with Python 3.8
