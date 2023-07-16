@@ -9,4 +9,4 @@ phases:
 
   build:
     commands:
-      - instance.py
+      - python instance.py
