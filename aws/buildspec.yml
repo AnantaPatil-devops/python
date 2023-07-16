@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.8
+    commands:
+      - pip install boto3  # Install AWS SDK for Python
+
+  build:
+    commands:
+      - instance.py
