@@ -12,4 +12,5 @@ phases:
       - python instance.py
 
 # Use the build image with Python 3.8
-image: aws/codebuild/standard:5.0
+environment:
+  image: aws/codebuild/standard:5.0
