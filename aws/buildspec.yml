@@ -6,7 +6,8 @@ phases:
       python: 3.11
     commands:
       - python -m venv venv      
-      - source venv/bin/activate
+      - chmod +x venv/bin/activate   
+      - venv/bin/activate
       - pip install boto3  # Install AWS SDK for Python
       - pip install --upgrade pip
       
@@ -17,5 +18,5 @@ phases:
       - python instance.py
 
 # Use the build image with Python 3.8
-environment:
-  image: aws/codebuild/standard:5.0
+  environment:
+    image: aws/codebuild/standard:5.0
