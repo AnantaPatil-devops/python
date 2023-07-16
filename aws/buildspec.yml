@@ -16,4 +16,5 @@ phases:
     commands:
       - cd aws
       - python instance.py
+      #new_try
 
