@@ -19,7 +19,7 @@ phases:
       - cd aws
 
       # Copy the file from the "aws" folder to the "venv" folder
-      - cp instance.py ../venv/bin
+      - cp instance.py ../venv/bin/
 
       # Now switch to the "venv" folder
       - cd ../venv
