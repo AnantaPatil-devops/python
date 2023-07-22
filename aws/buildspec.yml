@@ -17,8 +17,15 @@ phases:
   build:
     commands:
       - cd aws
-      # Activate the virtual environment and execute the Python script directly
-      - venv/bin/python instance.py
+
+      # Copy the file from the "aws" folder to the "venv" folder
+      - cp instance.py ../venv/bin
+
+      # Now switch to the "venv" folder
+      - cd ../venv
+
+      # Activate the virtual environment and execute the Python script using the -m option
+      - bin/python -m instance.py
       # Your other build commands here
 
   post_build:
