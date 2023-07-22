@@ -9,22 +9,20 @@ phases:
       - pip install virtualenv
       # Create a new virtual environment named "venv"
       - virtualenv venv
-      # Activate the virtual environment
-      - source venv/bin/activate
       # Upgrade pip inside the virtual environment
-      - pip install --upgrade pip
+      - venv/bin/pip install --upgrade pip
       # Install AWS SDK for Python (boto3) within the virtual environment
-      - pip install boto3
+      - venv/bin/pip install boto3
 
   build:
     commands:
       - cd aws
-      # The virtual environment is already activated, so you can directly run the Python script
-      - python instance.py
+      # Activate the virtual environment and execute the Python script directly
+      - venv/bin/python instance.py
       # Your other build commands here
 
   post_build:
     commands:
-      # Deactivate the virtual environment after the build is complete
+      # Deactivate the virtual environment after the build is complete (Not necessary for CodeBuild)
       - deactivate
       # Any post-build commands here
