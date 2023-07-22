@@ -25,7 +25,7 @@ phases:
       - cd ../venv
 
       # Activate the virtual environment and execute the Python script using the -m option
-      - bin/python -m instance.py
+      - bin/python -m instance
       # Your other build commands here
 
   post_build:
