@@ -2,8 +2,8 @@ import boto3
 
 # Create a session using your AWS credentials
 session = boto3.Session(
-aws_access_key_id = "AKIA4NYMPNXIHC3Q7KEP",
-aws_secret_access_key = "T80we0wyk70w7b4g+/oi3/g5ExumrkVzsUbZJI10",
+aws_access_key_id = "AKIA4NYMPNXIOL2WFACG",
+aws_secret_access_key = "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",
     region_name='us-east-1'
 )
 
