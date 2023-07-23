@@ -1,0 +1,6 @@
+[
+  {
+    "ImageId": "ami-1234567",
+    "InstanceType": "t2.micro"
+  }
+  ]
