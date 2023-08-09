@@ -45,6 +45,3 @@ The script begins by establishing a connection to the AWS EC2 service using Boto
 
 The script provides a comprehensive automation solution for setting up a basic network architecture in AWS, encompassing VPC creation, internet access configuration, subnet segmentation, and route table management. It is intended to simplify the process of network setup and ensure adherence to best practices in infrastructure as code.
 
---- 
-
-Please note that while the script provides a functional foundation for network automation, it can be further enhanced with error handling, parameterization, and additional configurations based on specific use cases and requirements.
